@@ -1,0 +1,191 @@
+.name{
+    font-weight: bold;
+}
+body{
+    font-family: 'Calibri';
+}
+button{
+    height: 50px;
+    width: 120px;
+    font-family: sans-serif;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(44, 175, 236);
+    cursor: pointer;
+}
+#buttonWrap {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nameDate{
+    margin-left: 10px;
+}
+.date{
+    color: gray;
+    font-size: 0.7em;
+}
+h5{
+    display:table;
+}
+.likeNumber{
+    font-size: larger;
+    display:table-cell;
+    vertical-align:middle;
+}
+.logo{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+.profile{
+    display: inline-flex;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.likes{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: auto;
+}
+.dislike{
+    cursor: pointer;
+}    
+
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+   }
+    #place{
+        display: block;
+   }
+    .card{
+        border-style: groove;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        margin-right: 10px;
+        position: relative;
+        height: 600px;
+   }
+    .image{
+        width: 300px;
+        height: 300px;
+        max-width: 90%;
+        max-height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+   }
+    .caption{
+        margin-left: 5px;
+        margin-right: 5px;
+   }
+    .profileImage{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+   }
+    .likeNumber{
+        font-size: larger;
+        display:table-cell;
+        vertical-align:middle;
+   }
+    .liked{
+        width: 30px;
+        height: 30px;
+   }
+    .dislike{
+        width: 30px;
+        height: 30px;
+   }
+}
+@media screen and (min-width: 768px) {
+    #place{
+        display: flex;
+        flex-wrap: wrap;
+   }
+    .card{
+        border-style: groove;
+        border-radius: 4px;
+        margin-bottom: 2px;
+        margin-right: 5px;
+        flex: 1 0 42%;
+        position: relative;
+        height: 420px;
+   }
+    .caption{
+        font-size: 0.8em;
+        margin-left: 5px;
+        margin-right: 5px;
+   }
+    .image{
+        width: 175px;
+        height: 175px;
+        max-width: 90%;
+        max-height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+   }
+    .profileImage{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+   }
+    .liked{
+        width: 30px;
+        height: 30px;
+   }
+    .dislike{
+        width: 30px;
+        height: 30px;
+   }
+}
+@media screen and (min-width: 992px){
+    #place{
+        display: flex;
+        flex-wrap: wrap;
+   }
+    .card{
+        border-style: groove;
+        border-radius: 4px;
+        margin-bottom: 2px;
+        flex: 1 0 21%;
+        position: relative;
+        height: 500px;
+   }
+    .caption{
+        margin-left: 5px;
+        margin-right: 5px;
+        word-wrap: break-word;
+   }
+    .image{
+        width: 230px;
+        height: 230px;
+        max-width: 90%;
+        max-height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+   }
+    .profileImage{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+   }
+    .liked{
+        width: 25px;
+        height: 25px;
+   }
+    .dislike{
+        width: 25px;
+        height: 25px;
+   }
+}
